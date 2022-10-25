@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="JS/jquery-3.5.1.min.js"> </script>
+    <link rel="stylesheet" href="/Aprendiendo JQUERY/JS/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="/Aprendiendo JQUERY/JS/jquery-ui/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" href="/Aprendiendo JQUERY/JS/jquery-ui/jquery-ui.theme.min.css" />
+
+    <script type="text/javascript" src="JS/jquery-ui/jquery-ui.min.js"> </script>
+    <script type="text/javascript" src ="/Aprendiendo JQUERY/JS/06-interfaces.js"></script>
+    <title>Aprendiendo JQUERY con Victor Robles - JQUERY UI </title>
+    <style>
+        .elemento {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: lightblue;
+            margin: 20px;
+            float: left;
+        }
+
+        .listaSeleccionable li {
+            width: 80%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        #elementoMovido {
+            width: 100px;
+            height: 100px;
+            border: 4px solid green;            
+        }
+
+        #area {
+            width: 300px;
+            height: 300px;
+            border: 4px solid red;            
+        }
+       
+        .elementos {
+            width: 300px;
+            height: 200px;
+            border: 4px solid black;
+            background: pink;
+            margin: 20px;
+            float: none;
+            display:none;
+        }
+
+        ui .ui-selecting{ background: green;}    
+        ui .ui-selected{ background: blue;}    
+    </style>
+</head>
+<body>    
+    <h1>Aprendiendo JQUERY con Victor Robles - JQUERY UI </h1>
+
+    <br/>
+    <h3> Tooltips</h3>
+    <a href="#" title="Acceder a la seccion mis datos en el WEB"> Mis Datos </a>
+    <a href="#" title="Loeguerse en esta WEB"> Identificarte </a>
+    <a href="#" title="Ver todos mis amigos"> Amigos </a>
+    <hr/>
+
+    <h3> Cuadro de Dialogo</h3>
+    <button id="lanzarPopup" > Lanzame</button>
+    <div id="popup" title ="Estas Seguro ??" style="display: none">
+        <p> Si te quedas aprenderas mucho de javascritp inevitablemente</p>
+
+    </div>
+
+    <hr/>
+
+    <h3> Calendario</h3>
+    <input type="text" id="calendario" />
+
+    <hr/>
+
+    <h3> Tabs</h3>
+    <div id="pestañas">
+        <ul>
+            <li> <a href="#tabs-1"> Pestañas 1</a></li>
+            <li> <a href="#tabs-2"> Pestañas 2</a></li>
+            <li> <a href="#tabs-3"> Pestañas 3</a></li>
+        </ul>
+        <div id ="tabs-1"> Hola soy la primera pestaña </div>
+        <div id ="tabs-2"> Hola soy la segunda pestaña </div>
+        <div id ="tabs-3"> Hola soy la tercera pestaña </div>
+    </div>
+    <hr/>
+
+    
+    <button id="mostrar"> Mostrar</button>
+    <div class="cajaEfectos elementos"> Hola </div>
+
+    <div id="elementoMovido"></div>    
+    <div id="area"></div>    
+    
+    <ui class="listaSeleccionable">
+        <li> GTA 5 </li>
+        <li> Need For Speed  </li>
+        <li> Crash Bandicoot </li>        
+        <li> Super Mario</li>
+        <li> Galaxian </li>
+    </ul>
+    <div class="elemento"> Hola soy un elemento de la WEB 1</div>
+    <div class="elemento"> Hola soy un elemento de la WEB 2</div>
+    <div class="elemento"> Hola soy un elemento de la WEB 3</div>
+</body>
+</html>

@@ -1,25 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript" src="JS/jquery-3.5.1.min.js"> </script>
-        <script type="text/javascript" src ="JS/02-eventos.js"></script>
-        <title>Aprendiendo JS con Victor Robles WEB - Eventos</title>
-        <style>
-            #caja{
-                width: 250px;
-                height: 250px;
-                border: 2px solid black;
-                background-color: yellow;
-            }
-        </style>
-    </head>
-    <body>
-        <h1> Aprendiendo JQuery</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="JS/jquery-3.5.1.min.js"> </script>
+    <script type="text/javascript" src ="JS/02-eventos.js"></script>
+    <title>Aprendiendo JQuery conn victor Robles - Eventos</title>
+    <style>
+        #caja{
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: yellow;            
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        #sigueme {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: yellow ;
+            opacity: 0.5;
+            border: 1px solid black;
+            border-radius: 999px;
+
+        }
+    </style>
+</head>
+<body>
+    <body>        
+        <h1> Aprendiendo JQuery conn victor Robles - Eventos</h1>
+
+        <div id="sigueme"></div>
+
+        <form>
+            <input type="text" id="nombre"/>
+        </form>
+        <div id="datos"> qqq</div>
+        <br/>
         <div id ="caja">
             soy una caja
         </div>
     </body>
+</body>
 </html>
