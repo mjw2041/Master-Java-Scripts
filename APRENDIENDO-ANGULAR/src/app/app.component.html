@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div [ngStyle]="{
+                  'background': configuracion.fondo,
+                  'padding': '20px',
+                  'border': '5px solid black',
+                  'border-color': configuracion.color
+                }">
+  <h1>Welcome to {{ title }}!</h1>
+
+  <nav>
+      <a [routerLink] = "['/home']" [routerLinkActive]="['active']">Home</a>
+      &nbsp;
+      <a [routerLink] = "['zapatillas']" [routerLinkActive]="['active']">Zapatilla</a>
+      &nbsp;
+      <a [routerLink] = "['cursos']" [routerLinkActive]="['active']">Cursos</a>
+      &nbsp;
+      <a [routerLink] = "['videojuegos']" [routerLinkActive]="['active']">Video Juego</a>
+      &nbsp;
+      <a [routerLink] = "['externo']" [routerLinkActive]="['active']">Externo</a>
+      &nbsp;
+      <a [routerLink] = "['contacto']" [routerLinkActive]="['active']">Contacto</a>
+
+
+
+  </nav>
+  <hr>
+
+  <p> {{descripcion}}</p>
+  <!--
+  <app-video-juego *ngIf="mostrarVideoJuego"></app-video-juego>
+  <button *ngIf="!mostrarVideoJuego" (click)="ocultarVideoJuego(true)">Mostrar</button>
+  <button *ngIf="mostrarVideoJuego" (click)="ocultarVideoJuego(false)">Ocultar</button>
+   -->
+  <!-- <app-zapatillas></app-zapatillas> -->
+  <!-- <cursos></cursos> -->
+
+  <router-outlet></router-outlet>
+</div>
+
+

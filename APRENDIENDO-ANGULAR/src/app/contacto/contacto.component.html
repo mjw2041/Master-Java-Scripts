@@ -1,0 +1,33 @@
+<h2>Contacto</h2>
+{{showData}}
+<form #formContacto = "ngForm" (ngSubmit) = "onSubmit(formContacto)">
+    <label for="nombre">Nombre</label> <br/>
+    <input type="text" name = "nombre" #nombre = "ngModel"  [(ngModel)] = "usuario.nombre"  required pattern="[a-zA-z]+"/>
+    <span *ngIf="nombre.touched && !nombre.valid">
+        El nombre es obligatorio
+    </span><br/>
+
+    <label for="apellido">Apellido</label> <br/>
+    <input type="text" name = "apellido" #apellido = "ngModel"  [(ngModel)] = "usuario.apellido" required pattern="[a-zA-z]+"/>
+    <span *ngIf="apellido.touched && !apellido.valid">
+      El apellido es obligatorio
+     </span><br/>
+
+
+    <label for="email">Email</label> <br/>
+    <input type="text" name = "email" #email = "ngModel"  [(ngModel)] = "usuario.email" required/>
+    <span *ngIf="email.touched && !email.valid">
+      El Email no es valido
+     </span><br/>
+
+    <label for="mensaje">Mensaje</label> <br/>
+    <textarea type="text" name = "mensaje" #mensaje = "ngModel"  [(ngModel)] = "usuario.mensaje" required> </textarea> <br/>
+    <span *ngIf="mensaje.touched && !mensaje.valid">
+      El mensaje es obligatorio
+     </span><br/>
+
+
+    <input type ="submit" value = "enviar" [disabled]="!formContacto.form.valid"/> <br/>
+
+
+</form>
